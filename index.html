@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -24,7 +24,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#whoAmI">Qui je suis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#skills">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#portfolio">Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#career">Parcours</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -35,55 +44,87 @@
             </div>
         </nav>
         <hgroup>
+            
             <h1>François PÉGOURIÉ</h1>
             <p>Développeur Web</p>
+        
         </hgroup>
     </header>
     <main>
         <section id="whoAmI">
-            <img src="" alt="photo de profil">
-            <div>
-                <h2>Qui je suis</h2>
-                <h3>Titre sous-marin</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Error deserunt tenetur corporis debitis harum?
-                    Quo ipsam pariatur nesciunt ipsa, recusandae commodi laudantium
-                    magni iste quia assumenda vero facilis, possimus non?</p>
+            <h2>Qui je suis</h2>
+            <div class="whoAmIContain">
+                <img src="assets/images/profilePic.jpg" alt="photo de profil">
                 <div>
-                    <p>Cliquez sur ces gros boutons jolis</p>
-                    <button>Télécharger CV</button>
-                    <a href="">Logo github</a>
-                    <a href="">Me contacter</a>
+                    <h3>Vers le développement web</h3>
+                    <p>De formation et intérêts scientifiques, j'ai toujours baigné dans l'informatique,
+                        que ce soit pour mon travail ou mes divertissements. J'ai finalement décidé de franchir le pas
+                        et ai rejoint une
+                        formation de développeur web en 2024 chez Human Booster. </p>
+                    <div>
+                        <p>Cliquez sur ces gros boutons jolis</p>
+                        <button>Télécharger CV</button>
+                        <a href="#contactMe">Me contacter</a>
+                        <a href="https://github.com/thelostfire?tab=repositories"><img src="assets/images/GitHub_Logo.png" alt="Logo GitHub"></a>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="skills">
             <h2>Mes compétences</h2>
-            <article>
-                <h3>Compétences techniques</h3>
-                <ul>
-                    <li>truc</li>
-                    <li>truc</li>
-                    <li>truc</li>
-                    <li>truc</li>
-                    <li>truc</li>
-                    <li>truc</li>
-                </ul>
-            </article>
-            <article>
-                <h3>Soft skills</h3>
-                <ul>
-                    <li>truc</li>
-                    <li>truc</li>
-                    <li>truc</li>
-                    <li>truc</li>
-                    <li>truc</li>
-                    <li>truc</li>
-                </ul>
-            </article>
+            <div>
+                <article>
+                    <h3>Compétences techniques</h3>
+                    <ul>
+                        <li>
+                            <img src="assets/images/html5-original.svg" alt="logo html5">
+                            <p>HTML5</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/css3-original.svg" alt="logo css3">
+                            <p>CSS3</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/javascript-original.svg" alt="logo javascript">
+                            <p>JavaScript</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/sql-icon-major-database-format-color-vector-46005630.jpg" alt="logo sql">
+                            <p>SQL</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/php-original.svg" alt="logo php">
+                            <p>PHP</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/wordpress-original.svg" alt="logo wordpress">
+                            <p>WordPress</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/symfony-original.svg" alt="logo symfony">
+                            <p>Symfony</p>
+                        </li>
+                        <li>
+                            <img src="assets/images/angular-original.svg" alt="logo angular">
+                            <p>Angular</p>
+                        </li>
+                    </ul>
+                </article>
+                <article>
+                    <h3>Soft skills</h3>
+                    <ul>
+                        <li>Travail en équipe</li>
+                        <li>Autonomie</li>
+                        <li>Gestion de conflit</li>
+                        <li>Interactions client</li>
+                        <li>truc</li>
+                        <li>truc</li>
+                    </ul>
+                </article>
+            </div>
 
         </section>
-        <section id="hobbies">
+        <!-- <section id="hobbies">
             <h2>Mes centres d'intérêts</h2>
             <ul>
                 <li></li>
@@ -93,7 +134,7 @@
                 <li></li>
                 <li></li>
             </ul>
-        </section>
+        </section> -->
         <section id="portfolio">
             <h2>Mon Portfolio</h2>
             <ul>
@@ -164,58 +205,65 @@
 
 
 
-            <article class="item" data-aos="fade-left">
-                <h2>Lorem ipsum dolor sit amet.</h2>
+            <article class="item" data-aos="fade-right">
+                <h2>Formation Développeur Web / Mobile</h2>
                 <img src="" alt="">
-                <p>Non mais pis quoi encore</p>
+                <p>Human Booster</p>
+            </article>
+            <article class="item2" data-aos="fade-left">
+                <h2>Projet de reconversion - 2023</h2>
+                <img src="" alt="">
+                <p>Villeurbanne</p>
             </article>
             <article class="item" data-aos="fade-right">
-                <h2>Lorem ipsum dolor sit amet.</h2>
+                <h2>Aide-Laboratoire - 2020</h2>
                 <img src="" alt="">
-                <p>Non mais pis quoi encore</p>
+                <p>CARSO-LSEHL</p>
             </article>
-            <article class="item" data-aos="fade-left">
-                <h2>Lorem ipsum dolor sit amet.</h2>
+            <article class="item2" data-aos="fade-left">
+                <h2>Equipier polyvalent - 2019</h2>
                 <img src="" alt="">
-                <p>Non mais pis quoi encore</p>
+                <p>Burger King</p>
             </article>
             <article class="item" data-aos="fade-right">
-                <h2>Lorem ipsum dolor sit amet.</h2>
+                <h2>Operateur blanchisserie - 2019</h2>
                 <img src="" alt="">
-                <p>Non mais pis quoi encore</p>
+                <p>ESAT La léchère - Biolattes</p>
+            </article>
+            <article class="item2" data-aos="fade-left">
+                <h2>License Histoire-Anthropologie - 2016</h2>
+                <img src="" alt="">
+                <p>Université Lyon 2</p>
+            </article>
+            <article class="item" data-aos="fade-right">
+                <h2>License Math-Info - 2013</h2>
+                <img src="" alt="">
+                <p>Université Lyon 1</p>
             </article>
 
             </div>
 
         </section>
-        <section>
-            <h2>Contactez oim</h2>
+        <section id="contactMe">
+            <h2>Contactez-moi !</h2>
             <form action=""></form>
-        </section>
-        <!-- <form action="https://formspree.io/f/xanewbnq" method="POST">
+        <form action="https://formspree.io/f/xanewbnq" method="POST">
+            <div>
             <label>
                 Your email:
-                <input type="email" name="email">
+                <input type="email" name="email" placeholder="Votre mail">
             </label>
+        </div>
+        <div>
             <label>
                 Your message:
-                <textarea name="message"></textarea>
+                <textarea name="message" placeholder="Votre message" rows="5"></textarea>
             </label>
-             your other form fields go here 
-            <button type="submit">Send</button>
-        </form> -->
-        <form action="https://formspree.io/f/xdkenara" method="POST">
-            <label>
-                Your email:
-                <input type="email" name="email">
-            </label>
-            <label>
-                Your message:
-                <textarea name="message"></textarea>
-            </label>
+        </div>
             <!-- your other form fields go here -->
-            <button type="submit">Send</button>
+            <button type="submit">Envoyer</button>
         </form>
+    </section>
     </main>
     <footer></footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
