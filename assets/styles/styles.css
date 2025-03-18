@@ -1,5 +1,6 @@
 :root {
     --bs-tertiary-bg-rgb: 122, 122, 122;
+    --bs-bg-opacity: 0.4;
     --border-color-day: rgb(194, 119, 14);
     * {
         box-sizing: border-box;
@@ -18,9 +19,12 @@ body {
         display: flex;
         flex-direction: column;
         text-align: center;
-        background-image: url("../images/evan.jpg");
-        height: 50vh;
-        nav.navbar {
+        background-image: url("../images/mountainDay.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        height: 80vh;
+        nav {
+            background-color: rgba(122, 122, 122, 0.4);
             div {
                 div {
                     ul.navbar-nav {
@@ -55,7 +59,7 @@ body {
                 border-radius: 5px;
             }
             div.whoAmIContain {
-                margin-bottom: 3rem;
+                margin: 0 3rem 3rem;
             }
             div {
                 
@@ -67,13 +71,29 @@ body {
                     div {
                         display: flex;
                         margin: 0;
-                        
+                        align-items: center;
+
                         a, button, p {
                             margin: 1rem 1rem 1rem 0;
+                            vertical-align: bottom;
                             img {
                                 width: 6rem;
                                 height: 3rem;
                             }
+                        }
+                        button {
+                            border: 3px solid var(--border-color-day);
+                            border-radius: 5px;
+                            background-color: lightgoldenrodyellow;
+                            padding: 0.5rem 1rem;
+                        }
+                        a:first-of-type {
+                            text-decoration: none;
+                            color: black;
+                            background-color: lightgoldenrodyellow;
+                            border: 3px solid var(--border-color-day);
+                            border-radius: 5px;
+                            padding: 0.5rem 1rem;
                         }
                     }
                 }  
