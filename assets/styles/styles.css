@@ -173,6 +173,13 @@ body {
                     }
                 }
             }
+            
+        }
+        section#skills > p {
+            color: white;
+            padding: 2rem 0;
+            text-shadow: 1px 1px 2px black;
+            font-size: 1.1rem;
         }
         /* section#hobbies {
 
@@ -307,6 +314,15 @@ body {
                     color: white;
                 }
             }
+        }
+    }
+    footer {
+        background-color: var(--border-color-day);
+        padding: 5vh 0;
+        p {
+            text-align: center;
+            margin: 0;
+            color: white;
         }
     }
 }
