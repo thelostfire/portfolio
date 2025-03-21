@@ -27,8 +27,8 @@ body {
         background-attachment: fixed;
         height: 80vh;
         nav {
-            background-color: rgba(122, 122, 122, 0.75);
-            div {
+            background-color: rgba(177, 177, 177, 0.75);
+            div.container-fluid {
                 div {
                     ul.navbar-nav {
                         li.nav-item {
@@ -39,6 +39,17 @@ body {
                                 transition: 0.1s ease-in;
                             }
                         }
+                    }
+                    button {
+                        background: none;
+                        border: none;
+                        width: 2rem;
+                        height: 2rem;
+                        margin-right: 1rem;
+                        background-image: url(../images/sun.svg);
+                    }
+                    button:hover {
+                        background-image: url(../images/sunHover.svg);
                     }
                 }
             }
@@ -121,6 +132,8 @@ body {
             margin: 0;
             h2 {
                 padding-top: 2rem;
+                color: white;
+                text-shadow: 1px 1px 2px black;
             }
             p {
                 text-align: center;
@@ -171,26 +184,37 @@ body {
             ul {
                 border-radius: 10px;
                 background-color: var(--background-color-day);
+                border-top: 4px solid var(--border-color-day);
+                border-bottom: 4px solid var(--border-color-day);
                 display: flex;
                 justify-content: space-around;
                 list-style-type: none;
                 padding: 0;
                 li {
                     border-radius: 10px;
-                    border: 3px solid var(--border-color-day);
+                    border-left: 3px solid var(--border-color-day);
+                    border-right: 3px solid var(--border-color-day);
                     background-color: white;
                     width: 28%;
                     margin: 2rem;
                     text-align: center;
                     img {
                         width: 90%;
-                        margin: 5% 0;
+                        margin-top: 5%;
                         border-radius: 10px;
                     }
                     a {
                         text-decoration: none;
                         color: black;
-                        font-weight: 600;
+                        font-weight: 400;
+                        font-size: 0.8rem;
+                        transition: 0.2s ease-in-out;
+                        p {
+                            margin: 1rem 5% 1rem;
+                        }
+                    }
+                    a:hover {
+                        color: var(--border-color-day);
                     }
                     h3 {
                         margin: 0 5% 1rem;
@@ -252,6 +276,11 @@ body {
         section#contactMe {
             form {
                 width: 80%;
+                margin: auto;
+                border-left: 3px solid var(--border-color-day);
+                border-right: 3px solid var(--border-color-day);
+                border-radius: 5px;
+                padding: 0 2rem;
                 div {
                     padding: 1rem 0;
                     display: flex;
@@ -267,6 +296,15 @@ body {
                 }
                 button {
                     margin: 1rem 0;
+                    border: 3px solid var(--border-color-day);
+                    border-radius: 5px;
+                    background-color: var(--background-color-day);
+                    padding: 0.5rem 1rem;
+                    transition: 0.2s ease-in;
+                }
+                button:hover {
+                    background-color: var(--border-color-day);
+                    color: white;
                 }
             }
         }
