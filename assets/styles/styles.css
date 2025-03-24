@@ -28,7 +28,7 @@ html {
             display: flex;
             flex-direction: column;
             text-align: center;
-            background-image: url("../images/mountainDay.jpg");
+            background-image: url("../images/mountainDay.avif");
             /* TODO: Image trop lourde, la réduire*/
             background-size: cover;
             background-attachment: fixed;
