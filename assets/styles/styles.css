@@ -128,12 +128,10 @@ body {
         section#skills {
             background-image: url(../images/skillsBGDay.jpg);
             background-size: cover;
-            background-attachment: fixed;
             margin: 0;
             h2 {
                 padding-top: 2rem;
-                color: white;
-                text-shadow: 1px 1px 2px black;
+                /* color: white; */
             }
             p {
                 text-align: center;
@@ -178,7 +176,7 @@ body {
         section#skills > p {
             color: white;
             padding: 2rem 0;
-            text-shadow: 1px 1px 2px black;
+            text-shadow: 2px 1px 2px black;
             font-size: 1.1rem;
         }
         /* section#hobbies {
