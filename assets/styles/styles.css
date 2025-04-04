@@ -188,7 +188,7 @@ html {
 
                             }
 
-                            a:first-of-type {
+                            a:nth-child(-n + 3) {
                                 text-decoration: none;
                                 color: black;
                                 background-color: var(--background-color-day);
